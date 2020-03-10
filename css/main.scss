@@ -1,5 +1,5 @@
 $layout-padding: 3em;
-$primary-color: #bf3a3a;
+$primary-color: #3a50bf;
 $darken-primary: darken($primary-color, 20%);
 $display-font: 'Montserrat',
 sans-serif;
@@ -19,6 +19,13 @@ a {
   text-decoration: none;
   transition-timing-function: cubic-bezier(1, 0, 0, 1);
   transition-duration: .2s;
+
+  &.cardlink {
+    width: 32%;
+    margin: 2% 1%;
+    min-width: 200px;
+    max-width: 250px;
+  }
 
   &.cardlink:hover {
     transform: scale(1.05);
@@ -147,7 +154,8 @@ p {
 
 section {
   grid-area: main;
-  padding: $layout-padding * 2.5;
+  padding: $layout-padding * 2;
+  padding-right: 0;
   position: relative;
   background-color: #fff;
   z-index: 1;
@@ -160,14 +168,16 @@ section {
 }
 
 .card-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: .5em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: flex-start;
 }
 
 .card {
   @extend %text;
-  margin-right: .5em;
+  margin: 0 auto;
   -webkit-box-shadow: 6px 10px 22px 0px rgba(0,0,0,0.15);
   -moz-box-shadow: 6px 10px 22px 0px rgba(0,0,0,0.15);
   box-shadow: 6px 10px 22px 0px rgba(0,0,0,0.15);
@@ -219,9 +229,9 @@ aside {
       margin: 2% 0;
     }
     &__skillwrap {
-      display: grid;
-      grid-template-columns: 1fr 3fr;
-      grid-template-areas: "nomes barras";
+      // display: grid;
+      // grid-template-columns: 1fr 3fr;
+      // grid-template-areas: "nomes barras";
     }
     &__list {
       margin: 0;
@@ -229,7 +239,9 @@ aside {
       text-align: right;
     }
     &__skill {
-
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
     &__title {
       font-size: 1em;
@@ -239,15 +251,13 @@ aside {
   }
 
   .barra {
-    &__list {
-      grid-area: barras;
-      transform: translateY(-3px);
-    }
     &__item {
       border: 2px solid #fff;
       height: 10px;
       margin: 9.5px;
       border-radius: 5px;
+      margin-left: 20px;
+      width: 220px;
     }
     &__cor {
       height: 100%;
@@ -337,7 +347,11 @@ h2 {
   }
 }
 
-@media screen and (max-width:600px) {}
+@media screen and (max-width:600px) {
+  .container {
+    display: block;
+  }
+}
 
 @keyframes fadeInLeft {
   0% {
