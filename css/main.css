@@ -112,7 +112,7 @@ body {
   left: 0;
   height: 100vh;
   width: 100%;
-  background-color: #3a50bf;
+  background-color: #2885d6;
   mix-blend-mode: multiply;
   -webkit-mask-image: url(/img/gradient-paralax-mask.png);
           mask-image: url(/img/gradient-paralax-mask.png);
@@ -141,7 +141,7 @@ body {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: #3a50bf;
+  background-color: #2885d6;
   mix-blend-mode: multiply;
   opacity: 1;
   z-index: -3;
@@ -185,7 +185,7 @@ section > p {
   margin: 0 auto;
   -webkit-box-shadow: 6px 10px 22px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 6px 10px 22px 0px rgba(0, 0, 0, 0.15);
-  background-color: #3a50bf;
+  background-color: #2885d6;
   color: #fff;
 }
 
@@ -216,8 +216,8 @@ aside {
   -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   grid-area: bio;
-  background: #222f71;
-  color: #acb6e6;
+  background: #185080;
+  color: #a8ceef;
   position: relative;
 }
 
@@ -351,7 +351,7 @@ footer {
 
 h1 {
   font-size: calc(1rem + 5vw);
-  color: #3a50bf;
+  color: #2885d6;
   margin-bottom: 0;
 }
 
@@ -361,19 +361,44 @@ h2 {
 
 @media screen and (max-width: 1200px) {
   .container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-    -ms-grid-rows: (100vh)[2];
-        grid-template-rows: repeat(2, 100vh);
-        grid-template-areas: "main" "footer";
+    display: block;
+  }
+  .spacer {
+    grid-area: spacer;
+    background-color: #185080;
+  }
+  aside {
+    padding: 2% 9em;
+  }
+  aside .bio__wrap {
+    padding-left: 2%;
   }
 }
 
 @media screen and (max-width: 600px) {
   .container {
     display: block;
+  }
+  section {
+    padding: 0;
+    text-align: center;
+    margin: 2% 5%;
+  }
+  .card-container {
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  aside {
+    padding: 2% 3em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  aside .bio__wrap {
+    padding: 3em 0;
   }
 }
 
