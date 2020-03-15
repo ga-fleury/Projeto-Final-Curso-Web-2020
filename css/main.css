@@ -85,6 +85,9 @@ header {
   position: absolute;
   color: #fff;
   margin: 2%;
+  opacity: 0;
+  -webkit-animation: fadeInLeft .2s 1s forwards;
+          animation: fadeInLeft .2s 1s forwards;
 }
 
 aside {
@@ -153,7 +156,7 @@ aside .bio__skill {
 
 aside .bio__title {
   font-size: 1em;
-  margin: 2% 0;
+  margin: 4% 0 2% 0;
   text-transform: uppercase;
 }
 
