@@ -81,6 +81,12 @@ h3 {
   }
 }
 
+header {
+  position: absolute;
+  color: #fff;
+  margin: 2%;
+}
+
 aside {
   display: -webkit-box;
   display: -ms-flexbox;
