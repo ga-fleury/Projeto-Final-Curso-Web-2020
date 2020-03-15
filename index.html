@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.css">
-  <title>Document</title>
+  <title>Portfolio 2020 | Juliana Carvalho</title>
+  <link rel="icon" 
+      type="image/png" 
+      href="/img/favicon.ico">
 </head>
 
 <body>
@@ -16,13 +19,17 @@
       <h1 class="hero__call">Portfolio 2020</h1>
       <h2 class="hero__calltext">Juliana Carvalho</h2>
     </span>
-    <img src="" alt="" class="foreground mask" />
+    <img src="" alt="" class="foreground" />
   </div>
-  <div class="container">
 
-    <section>
+  <!--grid wrap-->
+  <div class="grid-wrap">
+    <!--main section-->
+    <section class="main-section">
       <h1>Projetos</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+      <!--começo cards-->
       <div class="card-container">
         <a class="cardlink" target="_blank"
           href="https://www.behance.net/gallery/84759931/Guiabolso-Brand-Illustrations?tracking_source=best_of_behance">
@@ -61,41 +68,56 @@
           </div>
         </a>
       </div>
-      <!-- spacer -->
-      <!-- <div style="height:1200px;"></div> -->
+      <!--fim cards-->
+      <div class="spacer"></div>
+      <h1>Formação</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </section>
 
+    <!--sidebar-->
     <aside>
+      <!--foto e ícones-->
       <div class="bio__wrap">
         <div class="imgwrap">
           <img src="./img/profile-pic.jpg" alt="Juliana Carvalho" class="profilepic" height="128px" width="128px">
           <ul>
-            <li><a href=""><img src="./img/pin.svg" class="email" height="16px"></img><span>São Paulo - SP</span></a></li>
-            <li><a href=""><img src="./img/mail.svg" class="email" height="16px"></img><span>jcdias@gmail.com</span></a></li>
-            <li><a href=""><img src="./img/linkedin.svg" class="email" height="16px"></img><span>/julianacarvalho</span></a></li>
+            <li><a href=""><img src="./img/pin.svg" class="icon" height="16px"></img><span>São Paulo - SP</span></a></li>
+            <li><a href=""><img src="./img/mail.svg" class="icon" height="16px"></img><span>jcdias@gmail.com</span></a></li>
+            <li><a href=""><img src="./img/linkedin.svg" class="icon" height="16px"></img><span>/julianacarvalho</span></a></li>
           </ul>
         </div>
         <span class="bio__nome">Juliana Carvalho Dias</span>
-        <p class="bio__descri"><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ullam doloribus atque
-            quidem iste ipsa excepturi fugiat ipsum laborum, beatae, quam molestias iure consequatur dolore?</i></p>
+        <p class="bio__descri">
+          <i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ullam doloribus atque
+          quidem iste ipsa excepturi fugiat ipsum laborum, beatae, quam molestias iure consequatur dolore?
+          </i>
+        </p>
+        
+        <!--habilidades-->
         <span class="bio__title">Habilidades</span>
-        <div class="bio__skillwrap">
-          <ul class="bio__list">
-            <li class="bio__skill">Photoshop<div class="barra__item"><div class="barra__cor" style="width:80%;"></div></div></li>
-            <li class="bio__skill">Illustrator<div class="barra__item"><div class="barra__cor" style="width:72%;"></div></div></li>
-            <li class="bio__skill">Indesign<div class="barra__item"><div class="barra__cor" style="width:68%;"></div></div></li>
-            <li class="bio__skill">Web<div class="barra__item"><div class="barra__cor" style="width:95%;"></div></div></li>
-            <li class="bio__skill">UX/UI<div class="barra__item"><div class="barra__cor" style="width:60%;"></div></div></li>
-          </ul>
-        </div>
-        <span class="bio__title">Línguas</span>
+        <ul class="bio__list">
+          <li class="bio__skill">Photoshop<div class="barra__item"><div class="barra__cor" style="width:80%;"></div></div></li>
+          <li class="bio__skill">Illustrator<div class="barra__item"><div class="barra__cor" style="width:72%;"></div></div></li>
+          <li class="bio__skill">Indesign<div class="barra__item"><div class="barra__cor" style="width:68%;"></div></div></li>
+          <li class="bio__skill">Web<div class="barra__item"><div class="barra__cor" style="width:95%;"></div></div></li>
+          <li class="bio__skill">UX/UI<div class="barra__item"><div class="barra__cor" style="width:60%;"></div></div></li>
+        </ul>
+        <span class="bio__title">Idiomas</span>
+        <ul class="bio__list">
+          <li>Português - Nativo</li>
+          <li>Inglês - Fluente</li>
+          <li>Francês - Intermediário</li>
+        </ul>
       </div>
     </aside>
     <div class="spacer"></div>
 
     <footer>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore optio quia voluptate autem iusto vitae. Ipsa
-        perspiciatis eveniet sint explicabo?</p>
+      <small class="copy"><i>
+        Copyright &copy; 2020, Juliana Carvalho. Esta obra está licenciado com uma Licença 
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt">
+        Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional.
+      </a></i></small>
     </footer>
 
   </div>

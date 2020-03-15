@@ -1,0 +1,40 @@
+$layout-padding: 3em;
+$primary-color: #2885d6;
+$lighten-primary: lighten($primary-color, 30%);
+$darken-primary: darken($primary-color, 20%);
+$sidebar-right: "hero hero""main bio""footer bio";
+$sidebar-right-columns: 5fr 2fr;
+$sidebar-left: "bio main""bio footer";
+$sidebar-left-columns: 2fr 5fr;
+
+$display-font: 'Montserrat',
+sans-serif;
+$text-font: 'Arial',
+sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: $display-font;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  transition-duration: .2s;
+  color: inherit; //impede que os links mudem de cor depois de visitados
+}
+
+ul {
+  list-style-type: none;  
+}
