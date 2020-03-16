@@ -411,7 +411,7 @@ footer {
   grid-area: footer;
   padding: 3em;
   color: #2885d6;
-  text-align: right;
+  text-align: left;
   font-size: 10px;
 }
 
