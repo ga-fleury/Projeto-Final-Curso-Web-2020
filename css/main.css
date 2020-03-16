@@ -85,6 +85,24 @@ h3 {
   }
 }
 
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 header {
   position: absolute;
   color: #fff;
@@ -382,6 +400,9 @@ li .icon {
   position: absolute;
   bottom: 5%;
   right: 5%;
+  opacity: 0;
+  -webkit-animation: fadeIn 1s 2s forwards;
+          animation: fadeIn 1s 2s forwards;
 }
 
 footer {
