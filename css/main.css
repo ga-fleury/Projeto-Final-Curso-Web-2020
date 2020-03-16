@@ -490,5 +490,8 @@ footer {
   .grad__desc {
     margin: 0 5%;
   }
+  footer {
+    padding-bottom: 30px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
