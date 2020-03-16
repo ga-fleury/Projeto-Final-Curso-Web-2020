@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" media="screen">
-  <link rel="stylesheet" href="./css/main.css" media="screen">
-  <title>Portfolio 2020 | Juliana Carvalho</title>
-  <link rel="icon" 
-      type="image/png" 
-      href="/img/favicon.ico">
-
-  <link rel="alternate" href="en.html" hreflang="x-default" />
-  <link rel="alternate" href="index.html" hreflang="pt-br" />
-  <link rel="alternate" href="en.html" hreflang="en" />
-</head>
-
-<body>
-  <header>
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="./css/main.css" media="screen">
+    <title>Portfolio 2020 | Juliana Carvalho</title>
+    <link rel="icon" 
+    type="image/png" 
+    href="/img/favicon.ico">
+    
+    <link rel="alternate" href="en.html" hreflang="x-default" />
+    <link rel="alternate" href="index.html" hreflang="pt-br" />
+    <link rel="alternate" href="en.html" hreflang="en" />
+  </head>
+  
+  <body>
+    <img class="scrolldown" src="./img/down-arrow.svg" height="32px">
+    <header>
     <span><a href="index.html">BR</a> // <a href="en.html">EN</a></span>
   </header>
+  
   <div class="hero__wrap">
     <img src="" alt="" class="background" />
     <span class="hero__callwrap">
@@ -28,7 +30,7 @@
     </span>
     <img src="" alt="" class="foreground" />
   </div>
-
+    
   <!--grid wrap-->
   <div class="grid-wrap">
     <!--main section-->
@@ -39,11 +41,11 @@
       <!--começo cards-->
       <div class="card-container">
         <a class="cardlink" target="_blank"
-          href="https://www.behance.net/gallery/84759931/Guiabolso-Brand-Illustrations?tracking_source=best_of_behance">
-          <div class="card">
-            <img src="./img/projetos/guiabolso.png" alt=""
+        href="https://www.behance.net/gallery/84759931/Guiabolso-Brand-Illustrations?tracking_source=best_of_behance">
+        <div class="card">
+          <img src="./img/projetos/guiabolso.png" alt=""
               class="card__img" />
-            <div class="card__textwrap">
+              <div class="card__textwrap">
               <span class="card__title">Guiabolso</span>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, culpa accusamus! Dolore animi dolorum in?
               </p>
@@ -76,9 +78,37 @@
         </a>
       </div>
       <!--fim cards-->
+
       <div class="spacer"></div>
       <h1>Formação</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div class="grad">
+        <h2 class="grad__title">Graduação em Design</h2>
+        <span class="grad__date">FAUUSP / fev. 2015 - jul. 2021</span>
+        <p class="grad__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quidem doloremque ducimus unde sint accusantium dignissimos quo sunt nam totam. Voluptatem accusantium aperiam modi amet impedit dolore sequi illo ullam.</p>
+      </div>
+      <div class="grad">
+        <h2 class="grad__title">Técnico em Diagramação</h2>
+        <span class="grad__date">FAUUSP / fev. 2015 - jul. 2021</span>
+        <p class="grad__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quidem doloremque ducimus unde sint accusantium dignissimos quo sunt nam totam. Voluptatem accusantium aperiam modi amet impedit dolore sequi illo ullam.</p>
+      </div>
+
+      <div class="spacer"></div>
+      <h1>Experiência</h1>
+      <div class="grad">
+        <h2 class="grad__title">Lead Designer</h2>
+        <span class="grad__date">EMPRESA / fev. 2015 - jul. 2021</span>
+        <p class="grad__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quidem doloremque ducimus unde sint accusantium dignissimos quo sunt nam totam. Voluptatem accusantium aperiam modi amet impedit dolore sequi illo ullam.</p>
+      </div>
+      <div class="grad">
+        <h2 class="grad__title">Designer Júnior</h2>
+        <span class="grad__date">EMPRESA / fev. 2015 - jul. 2021</span>
+        <p class="grad__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quidem doloremque ducimus unde sint accusantium dignissimos quo sunt nam totam. Voluptatem accusantium aperiam modi amet impedit dolore sequi illo ullam.</p>
+      </div>
+      <div class="grad">
+        <h2 class="grad__title">Estágio</h2>
+        <span class="grad__date">EMPRESA / fev. 2015 - jul. 2021</span>
+        <p class="grad__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quidem doloremque ducimus unde sint accusantium dignissimos quo sunt nam totam. Voluptatem accusantium aperiam modi amet impedit dolore sequi illo ullam.</p>
+      </div>
     </section>
 
     <!--sidebar-->
@@ -88,9 +118,12 @@
         <div class="imgwrap">
           <img src="./img/profile-pic.jpg" alt="Juliana Carvalho" class="profilepic" height="128px" width="128px">
           <ul>
-            <li><a href=""><img src="./img/pin.svg" class="icon" height="16px"></img><span>São Paulo - SP</span></a></li>
-            <li><a href=""><img src="./img/mail.svg" class="icon" height="16px"></img><span>jcdias@gmail.com</span></a></li>
-            <li><a href=""><img src="./img/linkedin.svg" class="icon" height="16px"></img><span>/julianacarvalho</span></a></li>
+            <li><a class="icon" href=""><img src="./img/pin.svg" height="16px">
+                <span>São Paulo - SP</span></a></li>
+            <li><a class="icon" href="mailto:contato@julianacarvalho.com"><img src="./img/mail.svg" height="16px">
+                <span>jcdias@gmail.com</span></a></li>
+            <li><a class="icon" href="https://www.linkedin.com/"><img src="./img/linkedin.svg" height="16px">
+                <span>/julianacarvalho</span></a></li>
           </ul>
         </div>
         <span class="bio__nome">Juliana Carvalho Dias</span>
@@ -117,8 +150,6 @@
         </ul>
       </div>
     </aside>
-    <div class="spacer"></div>
-
     <footer>
       <small class="copy"><i>
         Copyright &copy; 2020, Juliana Carvalho. Esta obra está licenciado com uma Licença 

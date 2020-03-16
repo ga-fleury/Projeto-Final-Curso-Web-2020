@@ -13,7 +13,7 @@
 header {
   position: absolute;
   color: #fff;
-  margin: 2%;
+  margin: 5%;
   opacity: 0;
   animation: fadeInLeft .2s 1s forwards;
 }
@@ -158,6 +158,7 @@ aside {
   grid-area: main;
   padding: $layout-padding * 2;
   padding-right: 0;
+  padding-bottom: $layout-padding*.5;
   position: relative;
   background-color: #fff;
   z-index: 1;
@@ -194,12 +195,26 @@ aside {
   }
 }
 
+.grad {
+  &__title {
+    margin-top: 2%;
+    color: $primary-color;
+  }
+  &__date {
+    color: $lighten-primary;
+    font-weight: bold;
+    margin-top: -5px;
+  }
+  &__desc {
+    font-size: 1rem;
+    margin-top: 1%;
+    padding-right: $layout-padding*6;
+  }
+}
+
 .card {
   @extend %text;
   margin: 0 auto;
-  -webkit-box-shadow: 6px 10px 22px 0px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 6px 10px 22px 0px rgba(0, 0, 0, 0.15);
-  box-shadow: 6px 10px 22px 0px rgba(0, 0, 0, 0.15);
   background-color: $primary-color;
   color: #fff;
 
@@ -271,6 +286,11 @@ li {
     margin-left: 5%;
   }
 
+}
+
+.scrolldown {
+  position: absolute;
+  bottom: 5%; right: 5%;
 }
 
 footer {
