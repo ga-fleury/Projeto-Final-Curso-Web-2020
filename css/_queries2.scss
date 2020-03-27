@@ -1,0 +1,73 @@
+//mantém os cards em uma fileira 1x3
+@media screen and (min-width: 400px) {
+  .card-container {
+    padding: 0 $layout-padding*2;
+  }
+}
+
+//mantém os cards em uma fileira 1x3, ajusta margem das descrições
+@media screen and (min-width: 600px) {
+  .card-container {
+    padding: 0 $layout-padding*4;
+  }
+  .grad__container {
+    padding: 0 $layout-padding*2;
+  }
+}
+
+//libera os cards para ficarem 3x1 e ajusta margem da bio
+@media screen and (min-width: 800px) {
+  .card-container {
+    padding: 0;
+  }
+  aside {
+    padding: 2% $layout-padding*2;
+  }
+  footer {
+    padding: 2% $layout-padding*2;
+  }
+}
+
+//ajusta margem da bio
+@media screen and (min-width: 1000px) {
+  aside {
+    padding: 2% $layout-padding*4;
+  }
+  footer {
+    padding: 2% $layout-padding*4;
+  }
+}
+
+//adiciona o layout de grid e faz todos os ajuestes necessários
+@media screen and (min-width: 1200px) {
+  .grid-wrap {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "main bio""footer bio";
+    height: 100vh;
+  }
+  .main-section {
+    text-align: left;
+
+    #projetos {
+      padding: 0 $layout-padding*2;
+    }
+    
+    .grad__desc {
+      margin-left: 0;
+    }
+  }
+  aside {
+    padding: 2% 25px;
+
+    .bio__wrap {
+      padding: 1rem 0;
+    }
+  }
+  footer {
+    background-color: #fff;
+    color: $primary-color;
+    padding: 30px $layout-padding*2;
+  }
+}

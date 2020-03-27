@@ -1,3 +1,11 @@
+@media (max-width: 1300px) {
+  aside {
+    .bio__wrap {
+      padding-left: 25px;
+    }
+  }
+}
+
 @media (max-width: 1200px) {
   .grid-wrap {
     display: block;
@@ -6,7 +14,6 @@
   .main-section {
     padding: 2% 5%;
     text-align: center;
-    margin: 2% 5%;
 
     .card-container {
       align-content: flex-start;
@@ -47,14 +54,8 @@
 }
 
 @media (max-width: 600px) {
-  .grid-wrap {
-    display: block;
-  }
-
   .main-section {
     padding: 2% 0;
-    text-align: center;
-    margin: 2% 5%;
   }
 
   aside {
