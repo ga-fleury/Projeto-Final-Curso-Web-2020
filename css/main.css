@@ -433,7 +433,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1252px) {
   .grid-wrap {
     display: -ms-grid;
     display: grid;
@@ -447,8 +447,19 @@ footer {
   .main-section {
     text-align: left;
   }
+  .main-section .card-container {
+    padding: 0 3rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+  }
+  .main-section .grad__container {
+    padding: 0 3rem;
+  }
   .main-section #projetos {
-    padding: 0 6rem;
+    padding: 0 3rem;
   }
   .main-section .grad__desc {
     margin-left: 0;
@@ -462,6 +473,6 @@ footer {
   footer {
     background-color: #fff;
     color: #2885d6;
-    padding: 30px 6rem;
+    padding: 30px 3rem;
   }
 }
